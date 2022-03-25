@@ -48,7 +48,7 @@ export interface CurrencyInputProps extends Omit<TextInputProps, 'value'> {
    * Character for thousands delimiter.
    */
   InputComponent?: Function;
-  
+
   /**
    * Character for thousands delimiter.
    */

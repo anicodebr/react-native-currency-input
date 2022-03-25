@@ -158,7 +158,8 @@ export default React.forwardRef<TextInput, CurrencyInputProps>((props, ref) => {
       : formattedValue;
   }, [formattedValue, prefix, signPosition, startingWithSign, suffix]);
 
-  const DefaultComponent = InputComponent ? InputComponent : TextInput
+  const DefaultComponent = InputComponent ? InputComponent : TextInput;
+
   return (
     <DefaultComponent
       keyboardType="numeric"

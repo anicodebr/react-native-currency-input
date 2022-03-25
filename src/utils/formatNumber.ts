@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import type { FormatNumberOptions } from '../props';
 
 interface AddSignPrefixAndSuffixProps {
