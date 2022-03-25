@@ -1,6 +1,6 @@
 {
   "name": "@anicodebr/react-native-currency-input",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple currency input component for both iOS and Android",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
