@@ -18,6 +18,7 @@ export default React.forwardRef<TextInput, CurrencyInputProps>((props, ref) => {
     minValue,
     signPosition = 'afterPrefix',
     showPositiveSign,
+    InputComponent,
     ...rest
   } = props;
 
@@ -157,8 +158,9 @@ export default React.forwardRef<TextInput, CurrencyInputProps>((props, ref) => {
       : formattedValue;
   }, [formattedValue, prefix, signPosition, startingWithSign, suffix]);
 
+  const DefaultComponent = InputComponent ? InputComponent : TextInput
   return (
-    <TextInput
+    <DefaultComponent
       keyboardType="numeric"
       selection={
         suffix
